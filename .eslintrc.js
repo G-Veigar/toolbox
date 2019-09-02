@@ -23,5 +23,10 @@ module.exports = {
         jest: true
       }
     }
-  ]
+  ],
+  globals: {
+    wx: true,
+    console: true,
+    Modernizr: true
+  }
 }
