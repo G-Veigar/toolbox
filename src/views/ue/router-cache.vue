@@ -21,7 +21,6 @@ export default {
   methods: {
     goChild () {
       this.$router.push('/ue/router-cache/child')
-      conso
     }
   }
 }
