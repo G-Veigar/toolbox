@@ -7,3 +7,10 @@ html {
     margin-right: 10px;
     margin-bottom: 10px;
 }
+button {
+    height: 40px;
+    line-height: 40px;
+    min-width: 70px;
+    background-color: #eeeeee;
+    border: 1px solid #aaa;
+}

@@ -1,5 +1,5 @@
-# evolution
-一个不断改进的vue项目
+# toolbox
+一个前端工具箱项目，包含了工作中可能遇到的各种场景，方便参考
 
 ### Project setup
 

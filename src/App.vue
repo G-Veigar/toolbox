@@ -1,11 +1,18 @@
 <template>
   <div id="app">
-    <router-view/>
+    <keep-alive :include="keepAliveIncludes">
+      <router-view/>
+    </keep-alive>
   </div>
 </template>
 
 <script>
 export default {
+  data () {
+    return {
+      keepAliveIncludes: []
+    }
+  }
 }
 </script>
 

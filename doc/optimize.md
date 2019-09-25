@@ -24,6 +24,9 @@
 * 此插件只能用户history模式，hash模式不能使用（因为hash是不会传到服务器）
 
 * 由于此插件依赖puppeteer， 而puppeteer又依赖谷歌的chromium，所以终端必须有翻墙能力才行，另外一种解决方案是使用cnpm
+还有一种方案，在.npmrc文件中指定下载源
+puppeteer_download_host = https://npm.taobao.org/mirrors
+
 
 * 此插件可能会导致闪屏（比如初始页面路由/a，但会闪烁一下/路由的页面，然后变成/a的页面），具体原因猜测可能是跟异步路由有关，但不确定。
 
