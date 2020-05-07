@@ -146,6 +146,14 @@ let routes = [
     }
   },
   {
+    path: '/effect/guide-modal',
+    name: 'effectGuideModal',
+    component: () => import('../../views/effect/guide-modal.vue'),
+    meta: {
+      title: '引导层'
+    }
+  },
+  {
     path: '/image',
     name: 'image',
     component: () => import('../../views/image.vue'),

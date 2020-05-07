@@ -22,6 +22,7 @@
       <router-link to="/dm">设计模式</router-link><br>
       <router-link to="/canvas">canvas</router-link><br>
       <router-link to="/webApi">web API</router-link><br>
+      <router-link to="/bug">兼容性</router-link><br>
     </div>
   </div>
 </template>
