@@ -1,3 +1,11 @@
+<!--
+ * @Author: 高歌
+ * @Date: 2020-05-31 21:30:29
+ * @LastEditTime: 2020-06-29 11:34:10
+ * @LastEditors: 高歌
+ * @FilePath: /toolbox/src/views/js/throttle.vue
+ * @Description:
+-->
 <template>
   <div class="throttle">
     <h2>Debounce</h2>
@@ -10,15 +18,14 @@
 </template>
 
 <script>
-import { setTimeout, clearTimeout } from 'timers'
 // 节流函数，一段时间执行一次
 const throttle = (fun, time) => {
-  let datePre
-  return function (args) {
+  let datePre = 0
+  return function (...args) {
     let now = +new Date()
-    if (!datePre || (now - datePre > time)) {
-      fun.call(this, args)
+    if (now - datePre > time) {
       datePre = now
+      return fun.apply(this, args)
     }
   }
 }
@@ -26,10 +33,10 @@ const throttle = (fun, time) => {
 // 防抖函数，一段时间后才执行
 const debounce = (fun, time) => {
   let timer
-  return function (args) {
+  return function (...args) {
     timer && clearTimeout(timer)
     timer = setTimeout(() => {
-      fun.call(this, args)
+      fun.apply(this, args)
     }, time)
   }
 }

@@ -1,3 +1,11 @@
+<!--
+ * @Author: 高歌
+ * @Date: 2020-05-31 21:30:29
+ * @LastEditTime: 2020-07-03 13:49:33
+ * @LastEditors: 高歌
+ * @FilePath: /toolbox/src/views/bug/background-repeat.vue
+ * @Description:
+-->
 <template>
   <div class="page">
     <p>
@@ -17,7 +25,7 @@ export default {
 .bg {
   width: 100%;
   height: 9028px;
-  background: url('./asset/main-bg.png');
+  /* background: url('./asset/main-bg.png'); */
   background-size: 100%;
   background-repeat: repeat-y;
 }

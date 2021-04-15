@@ -36,7 +36,8 @@ module.exports = ({ file, options, env }) => {
         fontViewportUnit: 'vw', // (String) 字体使用的视口单位
         selectorBlackList: ['.ignore', '.hairlines'], // (Array) 需要忽略的CSS选择器，不会转为视口单位，使用原有的px等单位。
         minPixelValue: 1, // (Number) 设置最小的转换数值，如果为1的话，只有大于1的值会被转换
-        mediaQuery: false // (Boolean) 媒体查询里的单位是否需要转换单位
+        mediaQuery: false, // (Boolean) 媒体查询里的单位是否需要转换单位
+        exclude: [/devices.min.css/]
       }
     }
   }

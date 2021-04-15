@@ -184,6 +184,14 @@ let routes = [
     meta: {
       title: 'canvas'
     }
+  },
+  {
+    path: '/device',
+    name: 'device',
+    component: () => import('../../views/device.vue'),
+    meta: {
+      title: 'device'
+    }
   }
 ]
 
